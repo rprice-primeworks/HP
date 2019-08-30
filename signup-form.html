@@ -1,7 +1,83 @@
-<input name="testdata" value="thisistestdata" type="hidden">
-<input list= "MOS" name="MOS" style= "width: 100%; height: 48px; background-color:#f5f6f8; border:1px solid #d3d8e1; border-radius: 6px; font-size:14px; padding-left: 24px;font-color: #2c3340">
-<datalist id="MOS">
+  <form id="wf-form-Sign-up-Form" name="wf-form-Sign-up-Form" data-name="Sign up Form" redirect="https://www.hirepurpose.com/thank-you-sign-up" data-redirect="https://www.hirepurpose.com/thank-you-sign-up" method="post" class="contact-form">
+    <label for="name" class="label">Your Name</label>
+    <div class="div-block-4">
+      <input type="text" class="input name left w-input" maxlength="256" name="First-Name" data-name="First Name" placeholder="First Name" id="First-Name"> <input type="text" class="input name right w-input" maxlength="256" name="Last-Name" data-name="Last Name" placeholder="Last Name" id="Last-Name">
+    </div><label for="email" class="label">Email Address</label> <input type="email" class="input w-input" maxlength="256" name="email" data-name="email" placeholder="james@bond.com" id="email" required="">
+    <div class="div-block-53">
+      <div class="div-block-52">
+        <label for="Branch-2" class="label">Branch</label> <select id="Branch" name="Branch" data-name="Branch" required="" class="input left w-select">
+          <option value="Marines">
+            Marines
+          </option>
+          <option value="Army">
+            Army
+          </option>
+          <option value="Navy">
+            Navy
+          </option>
+          <option value="Air Force">
+            Air Force
+          </option>
+          <option value="Cost Guard">
+            Cost Guard
+          </option>
+        </select>
+      </div>
+      <div class="div-block-54">
+        <label for="Military-Service-2" class="label">Military Service</label> <select id="Military-Service" name="Military-Service" data-name="Military Service" class="input right w-select">
+          <option value="Veteran">
+            Veteran
+          </option>
+          <option value="Active Duty">
+            Active Duty
+          </option>
+          <option value="Military Spouse">
+            Military Spouse
+          </option>
+          <option value="Student Veteran">
+            Student Veteran
+          </option>
+        </select>
+      </div>
+    </div>
+    <div class="div-block-53">
+      <div class="div-block-52">
+        <label for="Willingness-to-Relocate-2" class="label">Willingness to Relocate</label> <select id="Willingness-to-Relocate-2" name="Willingness-to-Relocate" data-name="Willingness to Relocate" required="" class="input w-select">
+          <option value="Willing">
+            Willing
+          </option>
+          <option value="Not Willing">
+            Not Willing
+          </option>
+        </select>
+      </div>
+      <div class="div-block-54">
+        <label for="Education-Level-2" class="label">Education Level</label> <select id="Education-Level" name="Education-Level" data-name="Education Level" required="" class="input w-select">
+          <option value="High School">
+            High School
+          </option>
+          <option value="Associates">
+            Associates
+          </option>
+          <option value="Bachelors">
+            Bachelors
+          </option>
+          <option value="Masters">
+            Masters
+          </option>
+          <option value="PhD">
+            PhD
+          </option>
+          <option value="None">
+            None
+          </option>
+        </select>
+      </div>
+    </div>
+    <label for="MOS-2" class="label">MOS</label>
+    <input list= "MOS" name="MOS" style= "width: 100%; height: 48px; background-color:#f5f6f8; border:1px solid #d3d8e1; border-radius: 6px; font-size:14px; padding-left: 24px;font-color: #2c3340">
 
+    <datalist id="MOS">
 <option value='121 - Personnel Clerk'>
 <option value='151 - Administrative Clerk'>
 <option value='160 - Postal Officer'>
@@ -8801,4 +8877,49 @@
 <option value='17D2 - Cyberspace Operations'>
 <option value='17D3 - Cyberspace Operations'>
 <option value='17D4 - Cyberspace Operations'>
-</datalist>
+    </datalist>
+
+    <label for="City" class="label">Location</label>
+    <div class="multi-field-div">
+      <input type="text" class="input location left w-input" maxlength="256" name="City" data-name="City" placeholder="City" id="City"> <input type="text" class="input location right w-input" maxlength="256" name="State" data-name="State" placeholder="State" id="State-2">
+    </div><label for="email-2" class="label">Attach Resume</label>
+    <div class="file-upload w-file-upload">
+      <div class="default-state w-file-upload-default">
+        <input type="file" id="file" name="file" data-name="File" class="w-file-upload-input" style="height: 40px; width: 1px;">
+        <div class="icon-2 w-icon-file-upload-icon"></div>
+        <div class="text w-inline-block">
+          <label for="file" class="button small ghost w-file-upload-label">Upload Resume</label>
+        </div>
+        <div class="text-block-7 w-file-upload-info">
+          Max file size 10MB.
+        </div>
+      </div>
+      <div class="w-file-upload-uploading w-hidden">
+        <div class="w-file-upload-uploading-btn">
+          <svg class="w-icon-file-upload-uploading" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30">
+          <path fill="currentColor" opacity=".2" d="M15 30a15 15 0 1 1 0-30 15 15 0 0 1 0 30zm0-3a12 12 0 1 0 0-24 12 12 0 0 0 0 24z"></path>
+          <path fill="currentColor" opacity=".75" d="M0 15A15 15 0 0 1 15 0v3A12 12 0 0 0 3 15H0z" transform="rotate(217.421 15 15)">
+            <animatetransform attributename="transform" attributetype="XML" dur="0.6s" from="0 15 15" repeatcount="indefinite" to="360 15 15" type="rotate"></animatetransform>
+          </path></svg>
+          <div class="w-inline-block">
+            Uploading...
+          </div>
+        </div>
+      </div>
+      <div class="w-file-upload-success w-hidden">
+        <div class="w-file-upload-file">
+          <div class="w-file-upload-file-name">
+            fileuploaded.jpg
+          </div>
+          <div class="w-file-remove-link">
+            <div class="w-icon-file-upload-remove"></div>
+          </div>
+        </div>
+      </div>
+      <div class="w-file-upload-error w-hidden">
+        <div class="w-file-upload-error-msg" data-w-size-error="Upload failed. Max size for files is 10 MB." data-w-type-error="Upload failed. Invalid file type." data-w-generic-error="Upload failed. Something went wrong. Please retry.">
+          Upload failed. Max size for files is 10 MB.
+        </div>
+      </div>
+    </div><input type="submit" value="Sign Up" data-wait="Please wait..." class="button w-button">
+  </form>
